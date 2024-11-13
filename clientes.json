@@ -1,0 +1,75 @@
+{
+  "clientes": [
+    {
+      "id": 1,
+      "nombres": "Jorge",
+      "apellidos": "Alfaraz Fernandez",
+      "cliente": "VIP",
+      "rol": "Admin",
+      "cel": "999999999",
+      "email": "c3wQ2@example.com",
+      "code-card": "123456789",
+      "pin": "1234",
+      "saldo": 1110,
+      "historial": [
+        {
+          "tipo": "deposito",
+          "monto": 500,
+          "fecha": "2023-01-01"
+        },
+        {
+          "tipo": "retiro",
+          "monto": 100,
+          "fecha": "2023-01-04"
+        },
+        {
+          "tipo": "deposito",
+          "monto": 20,
+          "fecha": "11-11-2022"
+        },
+        {
+          "tipo": "deposito",
+          "monto": 80,
+          "fecha": "11-11-2022"
+        },
+        {
+          "tipo": "retiro",
+          "monto": 100,
+          "fecha": "11-11-2022"
+        },
+        {
+          "tipo": "deposito",
+          "monto": 10,
+          "fecha": "11-11-2022"
+        },
+        {
+          "tipo": "retiro",
+          "monto": 10,
+          "fecha": "13-11-2024 14:18:48"
+        },
+        {
+          "tipo": "deposito",
+          "monto": 100,
+          "fecha": "13-11-2024 14:19:42"
+        },
+        {
+          "tipo": "deposito",
+          "monto": 10,
+          "fecha": "13-11-2024 14:23:46"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nombres": "Alex",
+      "apellidos": "Gomez Aroni",
+      "cel": "123123123",
+      "email": "alex@gmail.com",
+      "rol": "usuario",
+      "saldo": 0,
+      "historial": [],
+      "code-card": "123123123",
+      "pin": "1234"
+    }
+  ]
+}
