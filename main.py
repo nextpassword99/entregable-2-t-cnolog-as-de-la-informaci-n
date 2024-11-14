@@ -175,7 +175,10 @@ def login():
     return None
 
 
-def menu(usuario, cajero):
+def menu(id_usuario: int):
+    usuario = Usuario(id_usuario)
+    cajero = Cajero(id_usuario)
+
     menu_normal = """
         1. Depositar
         2. Retirar
@@ -188,6 +191,7 @@ def menu(usuario, cajero):
         7. Crear cuenta (Solo Administrador)
     """
     print(menu_normal)
+
     if usuario.obtener_rol() == "Admin":
         print(menu_admin)
 
@@ -236,11 +240,8 @@ def main():
         return
 
     id_usuario = autenticar.obtener_id_usuario()
-    usuario = Usuario(id_usuario)
-    cajero = Cajero(id_usuario)
-
     while True:
-        menu(usuario, cajero)
+        menu(id_usuario)
 
 
 if __name__ == "__main__":
